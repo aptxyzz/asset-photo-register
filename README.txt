@@ -1,9 +1,9 @@
-Asset Photo Register v5 - Android export fix
+Asset Photo Register v6 - visible ZIP download link
 
-Export is now two-stage:
-1. Export Inspection ZIP prepares the package.
-2. When the ZIP Ready screen appears, tap Save / Share Inspection ZIP.
+Export now works in two explicit stages:
+1. Export Inspection ZIP builds the ZIP.
+2. A visible DOWNLOAD INSPECTION ZIP link appears. Tap that link.
 
-The second tap is required because Android/Chrome permits native file sharing only during a direct user action. This avoids losing the share permission while the app is asynchronously reading photos and building the ZIP.
+If an installed Android PWA does not hand the Blob to Android Downloads, open the GitHub Pages URL in normal Chrome, prepare the export there, and tap the visible download link. Check Chrome Downloads or the Android Downloads folder.
 
-ZIP content: Asset_Register.csv, Photo_Register.csv, and all captured photos arranged in folders.
+The ZIP contains Asset_Register.csv, Photo_Register.csv, and actual captured photos.
