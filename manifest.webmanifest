@@ -1,0 +1,9 @@
+{
+  "name": "Asset Photo Register",
+  "short_name": "Asset Photos",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f8f7",
+  "theme_color": "#14532d",
+  "description": "Offline Android asset photo capture and ZIP export"
+}
