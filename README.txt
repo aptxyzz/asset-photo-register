@@ -1,9 +1,9 @@
-Asset Photo Register v4
+Asset Photo Register v5 - Android export fix
 
-Fixes Android/PWA export delivery:
-- Uses Android native Share/Save sheet when supported.
-- Falls back to a proper browser download link.
-- Shows ZIP size and visible export errors.
-- Inspection ZIP still contains Asset_Register.csv, Photo_Register.csv and actual photos.
+Export is now two-stage:
+1. Export Inspection ZIP prepares the package.
+2. When the ZIP Ready screen appears, tap Save / Share Inspection ZIP.
 
-Upload all five files to the existing GitHub repository, commit, then open the Pages URL with ?v=4.
+The second tap is required because Android/Chrome permits native file sharing only during a direct user action. This avoids losing the share permission while the app is asynchronously reading photos and building the ZIP.
+
+ZIP content: Asset_Register.csv, Photo_Register.csv, and all captured photos arranged in folders.
